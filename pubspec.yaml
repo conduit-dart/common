@@ -9,9 +9,3 @@ dependencies:
 dev_dependencies: 
   dcli: ^0.51.0
   lint: ^1.0.0
-
-dependency_overrides:
-  # conduit_open_api:
-  #   path: ../open-api-dart
-
-
