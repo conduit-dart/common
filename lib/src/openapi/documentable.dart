@@ -162,7 +162,7 @@ class APIDocumentContext {
     await Future.forEach(dops, (Function dop) => dop());
 
     document.paths!.values
-        .expand((p) => p!.operations!.values)
+        .expand((p) => p!.operations.values)
         .where((op) => op!.security != null)
         .expand((op) => op!.security!)
         .forEach((req) {
