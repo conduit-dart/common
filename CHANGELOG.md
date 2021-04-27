@@ -1,3 +1,6 @@
+# 0.0.3
+- Null check warning
+
 # 0.0.2
 update openapi dep
 
