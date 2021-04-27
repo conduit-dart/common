@@ -255,7 +255,7 @@ class APIComponentCollection<T extends APIObject?> {
   T getObjectWithType(Type type) {
     final obj = _getInstanceOf()!;
     obj.referenceURI =
-        Uri(path: "/components/$_typeName/aqueduct-typeref:$type");
+        Uri(path: "/components/$_typeName/conduit-typeref:$type");
 
     if (_typeReferenceMap.containsKey(type)) {
       obj.referenceURI = _typeReferenceMap[type]!.referenceURI;
